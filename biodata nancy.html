@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #450206;
+    }
+
+    nav {
+      background-color: #430101;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: #ecf0f1;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #6f0202;
+    }
+
+    section {
+      padding: 100px 20px 60px;
+      min-height: 100vh;
+    }
+
+    .hero {
+      background: linear-gradient(to right, hsl(348, 97%, 24%), #74696a);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      animation: slideDown 1s ease;
+    }
+
+    .profile-pic-small {
+      width: 150px;
+      height: 150px;
+      border-radius: 10%;
+      object-fit: cover;
+      border: 3px solid white;
+      box-shadow: 2 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      animation: slideUp 1.2s ease;
+    }
+
+    .about, .experience, .contact {
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .experience h3 {
+      margin-top: 20px;
+      color: #be0909;
+    }
+
+    .experience p {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    form button {
+      background: #be0909;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #e70a3d;
+    }
+
+    footer {
+      background: #502c31;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Nancy Sunil</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="intro-container">
+      <img src="c:\Users\User\Downloads\WhatsApp Image 2025-06-07 at 12.29.08 PM.jpeg" alt="Profile Picture" class="profile-pic-small">
+      <h1>Hello, I'm Nancy Sunil</h1>
+    </div>
+    <p>Student | Tech Enthusiast</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate and curious Computer Science engineering student currently pursuing my B.Tech. I enjoy exploring technology, building web applications, and solving real-world problems through code. I have experience working with HTML, CSS, JavaScript, and basic backend technologies along with knowledge in programming languages like C/Python and eager to explore fields like AI, robotics, and software development.</p>
+    
+    <p>Apart from coding, I’m also interested in UI/UX design, participating in hackathons, and collaborating on team projects. I aim to build efficient, scalable, and impactful solutions. I’m a quick learner, highly adaptable, and a team player with effective communication skills, committed to personal and professional growth through continuous learning and collaboration.</p>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+  
+    <h3>🎓 Courses</h3>
+    <p>Completed "Web Development course with AI" on Udemy.</p>
+  
+    <h3>💼 Projects & Hackathons</h3>
+    <ul>
+      <li>Conceived the idea and collaborated with a team to develop <strong>Scamurai</strong>, a scam detection platform to safeguard students and freshers from fraudulent internship/job offers.</li></ul>
+    <ul>
+      <li>Attended <strong>AI SUMMIT</strong> by <strong> ACCELERATE X </strong> workshop.</li></ul>
+  
+
+  </section>
+  
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Email:</strong>nancysunil005@gmail.com</li>
+      <li><strong>Phone:</strong> +91 8281760076</li>
+      <li><strong>Location:</strong> Kollam, India</li>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nancy Sunil. All rights reserved.</p>
+  </footer>
+</body>
+</html>
